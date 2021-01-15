@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  mat-card {
+    width: 30vw;
+
+    .userpic {
+      width: 7rem;
+      height: 7rem;
+      margin-bottom: 1rem;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+
+      .title {
+        font-size: 1.1rem;
+        font-weight: bold
+      }
+    }
+    mat-card-actions {
+      margin: 0;
+      button {
+        color: #FFFFFF;
+        background-color: #d32f2f;
+        transition: background-color 0.2s ease-in;
+        &:hover {
+          background-color: #9a0007;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 824px) {
+    mat-card {
+      width: 80vw;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.card {
+  min-width: 300px;
+  margin: 20px;
+  mat-card-actions {
+    margin: 0;
+    button {
+      color: #FFFFFF;
+      background-color: #d32f2f;
+      transition: background-color 0.2s ease-in;
+      &:hover {
+        background-color: #9a0007;
+      }
+    }
+  }
+}

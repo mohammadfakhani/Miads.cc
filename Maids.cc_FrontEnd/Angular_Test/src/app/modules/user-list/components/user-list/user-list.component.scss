@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+@media only screen and (max-width: 824px) {
+  section {
+    flex-direction: row;
+    app-user-card {
+      &:last-child{
+        margin-bottom: 100px;
+      }
+    }
+    app-user-card {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
